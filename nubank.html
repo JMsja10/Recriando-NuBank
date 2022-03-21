@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nubank</title>
+    <link rel="shortcut icon" href="logo.png">
+    <style>
+        body, h1, h2, h3, p, ul{
+            padding: 0px;
+            margin: 0px;
+        }
+        .topo{
+            width: 100%;
+            height: 20px;
+            background-color: white;
+            padding:10px 0px 20px 50px;
+            position: fixed;
+        }
+        .logo{
+            display: block;
+            float: left;
+            margin-top: 5px;
+        }
+        .menuTopo{
+            max-width: 100%;
+            float: left;
+        }
+        .menuTopo li{
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .menuTopo a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+            margin-left: 33px;
+        }
+        .login{
+            float: right;
+        }
+        .login li{
+            display: inline-block;
+            font-family: 'Cabin', sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            padding-right: 70px;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #820ad1 ;
+        }
+        .fundo{
+            background: url('img1.png') no-repeat center center;
+            background-size: cover;
+            height: auto;
+            
+        }
+        .fundo h1{
+            padding: 500px 0 0 0;
+            margin-left: 220px;
+            color: white;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-size: 45px;
+
+        }
+        .fundo h2{
+            margin-left: 220px;
+            color: white;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-size: 20px;
+            margin-top: 0.3cm;
+        }
+        .cons{
+            box-sizing: border-box;
+            background-color: white;
+            max-width: 330px;
+            height: 300px;
+            float: right;
+            border-radius: 7px;
+            text-align: center;
+            padding: 20px;
+            margin-top: -400px;
+            margin-right: 40px;
+        }
+        .cons h3{
+            font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            display: block;
+            font-size: 1.17em;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold
+        }
+        .name{
+            color: #820ad1;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-size: 20px;
+        }
+        .bto{
+            background-color: #820ad1;
+            display: flex;
+            justify-content: space-between;
+            border: 0px;
+            align-items: center;
+            color: white;
+            width: 100%;
+            height: 30px;
+            border-radius: 15px;
+            margin-top: 10px;
+            padding: 20px;
+        }
+        .campo{
+            width: 100%;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+        }
+        /*Imagem 2 */
+        .img2, .ultra, .conta{
+            height: 800px;
+            background: white;
+        }
+        .img2 h2 a, .ultra h2 a, .conta h2 a{
+            text-decoration: none;
+        }
+        .img2 h2, .ultra h2, .conta h2{
+            margin-top: 100px;
+            text-align: left;
+            font-size: 3rem;
+            line-height: 1.16;
+            font-family: 'Courier New', Courier, monospace;
+            color: #820ad1;
+        }
+        .img2 h3, .ultra h3, .conta h3{
+            margin-top: 10px;
+            font-size: 3rem;
+            line-height: 1.16;
+
+        }
+        .imgCart, .imgViol, .imgCont{
+            float: left;
+            width: 45%;
+            height: auto;
+            max-width: 100%;
+        }
+        .cart, .cartUltra, .contaNu{
+            float: left;
+            width: 45%;
+            margin-left: 100px;
+        }
+        .linkcar, .linkUlt, .linkCont{
+            text-decoration: none;
+        }
+        .fundo2{
+            background: url('img5.png') no-repeat center center;
+            background-size: cover;
+            height: auto;
+        }
+        .fundo2 h2, .fundo3 h2, .fundo4 h2{
+            padding: 500px 0 0 0;
+            margin-left: 220px;
+            color: white;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-size: 45px;
+
+        }
+        .fundo3{
+            background: url('img6.png') no-repeat center center;
+            background-size: cover;
+            height: auto;
+        }
+        .fundo4{
+            background: url('img7.png') no-repeat center center;
+            background-size: cover;
+            height: auto;
+        }
+    </style>
+    
+</head>
+<body>
+        
+    <ul class="login">
+        <li><a href="#">Login ↪</li>
+    </ul>
+    <header class="topo"> 
+        <div>
+            <a class="logo" href="#"><img src="logo.png" alt="logo nu"> </a>
+        </div>
+        <nav class="menuTopo">
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Para você</a></li>
+                <li><a href="#">Para o seu negócio</a></li>
+                <li><a href="#">O Nubank</a></li>
+                <li><a href="#">Perguntas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Imagem do fundo-->
+    <section class="fundo">
+        <h1>O futuro é a razão que a<br> gente faz planos.</h1>
+        <h2>Escolha o futuro. Comece a controlar melhor sua vida<br> financeira com o Nubank. </h2>
+        
+        <div class="cons">
+            <h3>Peça sua conta e cartão<br> de crédito</h3>
+            <label for="ident"><span class="name">Digite o seu cpf</span>
+            <input type="cpf" class="campo">
+            </label>
+            <button type="submit" class="bto">Continuar</button>
+        </div>
+    </section>
+    <!-- Segunda imagem-->
+    <section class="img2">
+        <div class="cart">
+            <h2><a href="#"> Cartão de crédito</a></h2>
+            <h3>Pode chamar ele de<br> roxinho. Além disso, pode<br> chamar ele de moderno,<br> gratuito e prático também.</h3>
+            <a href="#" class="linkcar">Saiba mais</a>
+        </div>
+        <div class="imgCart">
+            <img src="img2.png">
+        </div>
+    </section>
+    <!--Terceira imagem-->
+    <section class="ultra">
+        <div class="cartUltra">
+            <h2><a href="#">Nubank Ultravioleta</a></h2>
+            <h3>O cartão pensado para<br> quem quer ver além</h3>
+            <a href="#" class="linkUlt">Saiba mais</a>
+        </div>
+        <div class="imgViol">
+            <img src="img3.png" >    
+        </div>
+    </section>
+    <!--Quarta imagem-->
+    <section class="conta">
+        <div class="contaNu">
+            <h2><a href="#">Conta do Nubank</a></h2>
+            <h3>A conta que vai levar você<br> ao controle da sua vida<br> financeira.</h3>
+            <a href="#" class="linkCont">Saiba mais</a>
+        </div>
+        <div class="imgCont">
+            <img src="img4.png">
+        </div>
+    </section>
+    <!-- Quinta image-->
+    <section class="fundo2">
+       <h2>Nós acreditamos que só<br> uma pessoa pode ter<br> controle sobre sua vida<br> financeira: você.</h2> 
+
+    </section>
+    <section class="fundo3">
+        <h2>NuCommunity <br>A comunidade oficial do<br> Nubank para você tirar<br> dúvidas e compartilhar<br> ideias.</h2> 
+ 
+     </section>
+     <section class="fundo4">
+        <h2>Muita informação e<br> conteúdo para você<br> encontrar a melhor<br> versão da sua vida<br> financeira</h2> 
+ 
+     </section>
+</body>
+</html>
